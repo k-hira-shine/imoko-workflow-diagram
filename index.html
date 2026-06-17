@@ -143,8 +143,18 @@
   <div class="flow">
     <div class="group-label">AIによる制作工程</div>
 
-    <div class="step" style="--c:var(--script)">
+    <div class="step" style="--c:var(--image)">
       <div class="num">1</div>
+      <div class="body">
+        <div class="title">サムネイルを作成する</div>
+        <div class="desc">動画の「顔」となるサムネイル画像を最初に用意する工程。クリックの入口を先に固めることで、このあとの台本も方向性がぶれにくくなる。画像はGPT Imageで生成する。</div>
+      </div>
+      <div class="tool" style="--c:var(--image)">ChatGPT / GPT&nbsp;Image</div>
+    </div>
+    <div class="arrow">▼</div>
+
+    <div class="step" style="--c:var(--script)">
+      <div class="num">2</div>
       <div class="body">
         <div class="title">台本を作成する</div>
         <div class="desc">動画で話す内容の原稿を用意する工程。冒頭で視聴者の関心をつかみ、本題へと展開し、最後はチャンネル登録の促進で締めくくる構成が基本となる。</div>
@@ -154,17 +164,17 @@
     <div class="arrow">▼</div>
 
     <div class="step" style="--c:var(--image)">
-      <div class="num">2</div>
+      <div class="num">3</div>
       <div class="body">
         <div class="title">キャラクター画像を生成する</div>
-        <div class="desc">動画に登場する人物（アバター）の画像をAIで生成。背景まで含めた1枚に仕上げておくのがポイントになる。顔や髪型を最初に確定させてしまえば、あとは服装や場所を変えるだけで何度でも使い回せる。サムネイル画像も同じGPT Imageで作成する。</div>
+        <div class="desc">動画に登場する人物（アバター）の画像をAIで生成。背景まで含めた1枚に仕上げておくのがポイントになる。顔や髪型を最初に確定させてしまえば、あとは服装や場所を変えるだけで何度でも使い回せる。</div>
       </div>
       <div class="tool">ChatGPT / GPT&nbsp;Image&nbsp;2</div>
     </div>
     <div class="arrow">▼</div>
 
     <div class="step" style="--c:var(--audio)">
-      <div class="num">3</div>
+      <div class="num">4</div>
       <div class="body">
         <div class="title">ナレーション用の声を用意する</div>
         <div class="desc">ナレーションに使う声を準備する工程。標準で用意された声でも制作はできるが、他チャンネルと重複しやすいのが難点。実際の人の声をAIに学習させれば、独自の声（ボイスクローン）を用意できる。設定は最初の一度だけで、以降はそのまま使い回せる。</div>
@@ -174,7 +184,7 @@
     <div class="arrow">▼</div>
 
     <div class="step" style="--c:var(--audio)">
-      <div class="num">4</div>
+      <div class="num">5</div>
       <div class="body">
         <div class="title">ナレーション音声を生成する</div>
         <div class="desc">用意した声で台本を読み上げ、ナレーション音声を生成。区切りごとに作っては、その都度内容を確認していく。人名や専門用語は読み間違いが起きやすいため、納得のいく仕上がりになるまで作り直すとよい。</div>
@@ -184,7 +194,7 @@
     <div class="arrow">▼</div>
 
     <div class="step" style="--c:var(--audio)">
-      <div class="num">5</div>
+      <div class="num">6</div>
       <div class="body">
         <div class="title">音声を調整して1本にまとめる</div>
         <div class="desc">区切りごとの音声を、音量をそろえたうえで1本に結合する工程。区切りの間には0.5秒の無音を挟む。具体的な手順は下のとおり。</div>
@@ -194,7 +204,7 @@
     <div class="arrow">▼</div>
 
     <div class="step" style="--c:var(--video)">
-      <div class="num">6</div>
+      <div class="num">7</div>
       <div class="body">
         <div class="title">話す動画を生成する</div>
         <div class="desc">キャラクター画像と音声を渡すと、口の動きが音声に合った動画ができあがる。設定は「Avatar Ⅳ」「動きは控えめ」で固定するのが安定のコツ。詳しい流れは下を参照。</div>
@@ -204,9 +214,9 @@
     <div class="arrow">▼</div>
 
     <div class="step dashed">
-      <div class="num">7</div>
+      <div class="num">8</div>
       <div class="body">
-        <div class="title">画面を収録する <span style="font-weight:400;color:var(--sub);font-size:.8rem">（必要時のみ）</span></div>
+        <div class="title">画面を収録する<span style="font-weight:400;color:var(--sub);font-size:.8rem">（必要時のみ）</span></div>
         <div class="desc">操作手順を見せる動画の場合に、パソコン画面を収録する工程。収録した映像は編集担当へ渡す素材となる。必要のない動画であれば、丸ごと省略してかまわない。</div>
       </div>
       <div class="tool" style="--c:var(--option)">QuickTime</div>
@@ -216,17 +226,17 @@
     <div class="group-label">人による仕上げ・公開工程</div>
 
     <div class="step" style="--c:var(--edit)">
-      <div class="num">8</div>
+      <div class="num">9</div>
       <div class="body">
         <div class="title">動画編集を外注する</div>
-        <div class="desc">クラウドワークスで編集担当者を募集し、仕上げを依頼する工程。字幕（テロップ）の体裁統一、不要部分のカット、BGMの音量調整などをまとめて任せる。サムネイルは自社でGPT Imageを使って用意する。</div>
+        <div class="desc">クラウドワークスで編集担当者を募集し、仕上げを依頼する工程。字幕（テロップ）の体裁統一、不要部分のカット、BGMの音量調整などをまとめて任せる。サムネイルは工程1で用意済みのものを渡す。</div>
       </div>
       <div class="tool">クラウドワークス</div>
     </div>
     <div class="arrow">▼</div>
 
     <div class="step" style="--c:var(--publish)">
-      <div class="num">9</div>
+      <div class="num">10</div>
       <div class="body">
         <div class="title">YouTubeに公開する</div>
         <div class="desc">完成した動画をYouTubeへ投稿し、公開して一連の制作は完了となる。</div>
@@ -237,7 +247,7 @@
 
   <!-- ===== 音声後処理 詳細 ===== -->
   <section class="sub">
-    <h2>🔊 工程5「音声の調整」の手順（この順番で実施）</h2>
+    <h2>🔊 工程6「音声の調整」の手順（この順番で実施）</h2>
     <div class="chain">
       <div class="chip" style="--c:var(--audio)"><b>① 集約</b>区切りごとの音声ファイル（MP3）を1つのフォルダにまとめる</div>
       <div class="sep">→</div>
@@ -256,7 +266,7 @@
 
   <!-- ===== HeyGen 詳細 ===== -->
   <section class="sub">
-    <h2>🎥 工程6「動画生成」の流れ（HeyGen）</h2>
+    <h2>🎥 工程7「動画生成」の流れ（HeyGen）</h2>
     <div class="chain">
       <div class="chip" style="--c:var(--video)"><b>① アバター登録</b>キャラクター画像をアバターとしてHeyGenに登録する</div>
       <div class="sep">→</div>
@@ -286,15 +296,16 @@
         <tr><th>工程</th><th>使用ツール</th><th>用途</th><th>費用体系</th><th>月額目安</th></tr>
       </thead>
       <tbody>
-        <tr><td><span class="dot" style="background:var(--script)"></span>1 台本</td><td>自社で作成</td><td>原稿の作成</td><td class="cost">自社対応（費用なし）</td><td class="cost">—</td></tr>
-        <tr><td><span class="dot" style="background:var(--image)"></span>2 画像</td><td>ChatGPT / GPT Image</td><td>キャラクター画像・サムネイルの生成</td><td class="cost">月額制</td><td class="cost">約3,100円<br><span style="font-size:.78rem;color:var(--sub)">（Plus／$20）</span></td></tr>
-        <tr><td><span class="dot" style="background:var(--audio)"></span>3 声づくり</td><td>FishAudio</td><td>使用ボイス（ボイスクローン）の用意</td><td class="cost">従量制／月額制</td><td class="cost">約1,700円<br><span style="font-size:.78rem;color:var(--sub)">（Plus／$11・無料枠あり）</span></td></tr>
-        <tr><td><span class="dot" style="background:var(--audio)"></span>4 音声</td><td>FishAudio</td><td>原稿の読み上げ生成</td><td class="cost">従量制／月額制</td><td class="cost"><span style="color:var(--sub)">3と同一契約</span></td></tr>
-        <tr><td><span class="dot" style="background:var(--audio)"></span>5 音声整え</td><td>Cursor / Claude Code<br><span style="font-size:.78rem;color:var(--sub)">（内部でffmpeg等が稼働）</span></td><td>音量の均一化・結合</td><td class="cost">月額制（AIツール利用料）</td><td class="cost">約3,100円〜<br><span style="font-size:.78rem;color:var(--sub)">（$20〜）</span></td></tr>
-        <tr><td><span class="dot" style="background:var(--video)"></span>6 動画</td><td>HeyGen</td><td>リップシンク動画の生成</td><td class="cost">クレジット制</td><td class="cost">約4,500円<br><span style="font-size:.78rem;color:var(--sub)">（Creator／$29・無料枠あり）</span></td></tr>
-        <tr><td><span class="dot" style="background:var(--option)"></span>7 録画</td><td>QuickTime Player</td><td>画面収録（必要時）</td><td class="cost">無料</td><td class="cost">0円</td></tr>
-        <tr><td><span class="dot" style="background:var(--edit)"></span>8 編集</td><td>クラウドワークス</td><td>動画編集の外注</td><td class="cost">都度発注（案件単位）</td><td class="cost">10,000〜15,000円／本</td></tr>
-        <tr><td><span class="dot" style="background:var(--publish)"></span>9 投稿</td><td>YouTube</td><td>動画の公開</td><td class="cost">無料</td><td class="cost">0円</td></tr>
+        <tr><td><span class="dot" style="background:var(--image)"></span>1 サムネ</td><td>ChatGPT / GPT Image</td><td>サムネイル画像の生成</td><td class="cost">月額制</td><td class="cost"><span style="color:var(--sub)">3と同一契約</span></td></tr>
+        <tr><td><span class="dot" style="background:var(--script)"></span>2 台本</td><td>自社で作成</td><td>原稿の作成</td><td class="cost">自社対応（費用なし）</td><td class="cost">—</td></tr>
+        <tr><td><span class="dot" style="background:var(--image)"></span>3 画像</td><td>ChatGPT / GPT Image</td><td>キャラクター画像の生成</td><td class="cost">月額制</td><td class="cost">約3,100円<br><span style="font-size:.78rem;color:var(--sub)">（Plus／$20）</span></td></tr>
+        <tr><td><span class="dot" style="background:var(--audio)"></span>4 声づくり</td><td>FishAudio</td><td>使用ボイス（ボイスクローン）の用意</td><td class="cost">従量制／月額制</td><td class="cost">約1,700円<br><span style="font-size:.78rem;color:var(--sub)">（Plus／$11・無料枠あり）</span></td></tr>
+        <tr><td><span class="dot" style="background:var(--audio)"></span>5 音声</td><td>FishAudio</td><td>原稿の読み上げ生成</td><td class="cost">従量制／月額制</td><td class="cost"><span style="color:var(--sub)">4と同一契約</span></td></tr>
+        <tr><td><span class="dot" style="background:var(--audio)"></span>6 音声整え</td><td>Cursor / Claude Code<br><span style="font-size:.78rem;color:var(--sub)">（内部でffmpeg等が稼働）</span></td><td>音量の均一化・結合</td><td class="cost">月額制（AIツール利用料）</td><td class="cost">約3,100円〜<br><span style="font-size:.78rem;color:var(--sub)">（$20〜）</span></td></tr>
+        <tr><td><span class="dot" style="background:var(--video)"></span>7 動画</td><td>HeyGen</td><td>リップシンク動画の生成</td><td class="cost">クレジット制</td><td class="cost">約4,500円<br><span style="font-size:.78rem;color:var(--sub)">（Creator／$29・無料枠あり）</span></td></tr>
+        <tr><td><span class="dot" style="background:var(--option)"></span>8 録画</td><td>QuickTime Player</td><td>画面収録（必要時）</td><td class="cost">無料</td><td class="cost">0円</td></tr>
+        <tr><td><span class="dot" style="background:var(--edit)"></span>9 編集</td><td>クラウドワークス</td><td>動画編集の外注</td><td class="cost">都度発注（案件単位）</td><td class="cost">10,000〜15,000円／本</td></tr>
+        <tr><td><span class="dot" style="background:var(--publish)"></span>10 投稿</td><td>YouTube</td><td>動画の公開</td><td class="cost">無料</td><td class="cost">0円</td></tr>
       </tbody>
     </table>
     <p style="font-size:.82rem;color:var(--sub);margin-top:10px;">
